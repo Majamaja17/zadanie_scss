@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>zadanie_scss</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="build/css/style.css">
+    </head>
+    <body>
+    	<header>
+			<nav>
+				<div class="topnav" id="myTopnav">
+					<div class="nav_top">
+						<img src="images/logo1.png">
+						<a href="#first" class="active">Template page</a>
+						<a href="#second">Contact us</a>
+						<a href="javascript:void(0);" class="icon">
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+				</div>
+    		</nav>
+		</header>
+		<section id="first">
+			<div class="container">
+				<div class="first_text">
+					<h1>Our clinics</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Incididunt ut labore et 
+					dolore magna aliqua. Incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="first_opinion">
+					<img class="opinion_img1" src="images/dog.png">
+					<div>
+						<div class="opinion_inner1">
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit, bore et dolore magna aliqua.</p>
+							<div>
+								<p class="opinion_btn_text">Lorem ipsum dolor&#8594;</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="second_opinion">
+					<img class="opinion_img2" src="images/doctor.png">
+					<div>
+						<div class="opinion_inner2">
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit, bore et dolore magna aliqua.</p>
+							<div>
+								<p class="opinion_btn_text">Lorem ipsum dolor&#8594;</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="second">
+			<div class="contact_grid row">
+				<div class="col-5">
+					<img src="images/logo2.png">
+					<a href="#">About us</a>
+					<a href="#">Template page</a>
+				</div>
+				<div class="col-7">
+					<h2>Get in touch with us</h2>
+					<div class="form_div">
+						<form method="post" action="form.php" id="contactForm" class="form">
+						    <div class="form_row form_top">
+								<textarea id="name" class="top_form" name="name" placeholder="Name" required></textarea>
+								<textarea id="number" class="top_form" name="number" placeholder="Phone number" required></textarea>
+								<textarea id="email" class="top_form" dirname="email" name="email" placeholder="Email" required></textarea>
+						    </div>
+						    <div class="form-row form_down">
+								<textarea id="message" class="bottom_form" name="message" placeholder="Message" required></textarea>
+						    </div>
+							<button class="contact_btn submit-btn" type="submit">Send message</button>
+					    </form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+</html>

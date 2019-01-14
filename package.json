@@ -1,0 +1,25 @@
+{
+  "name": "zadanie_scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run scss-compile",
+    "scss-compile": "node-sass -rw assets/scss -o assets/css",
+    "watch": "npm run scss-compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Majamaja17/zadanie_scss.git"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Majamaja17/zadanie_scss/issues"
+  },
+  "homepage": "https://github.com/Majamaja17/zadanie_scss#readme",
+  "dependencies": {
+    "sass-breakpoints": "^2.1.0"
+  }
+}

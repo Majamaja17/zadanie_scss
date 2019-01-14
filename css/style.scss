@@ -1,0 +1,42 @@
+@import "colors";
+@import "grid";
+@import "nav";
+@import "section_1";
+@import "section_2";
+@import "resp";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 900px;
+	margin: 50px auto;
+}
+
+.row::before,
+.row::after {
+	content:"";
+	display: table;
+	clear: both;
+ }
+
+section {
+	padding: 100px 50px;
+}
+
+.gradient_bg {
+	background: rgb(74,15,112);
+	background: linear-gradient(114deg, rgba(74,15,112,1) 0%, rgba(9,80,102,1) 100%);
+}
+
+
+.header_size {
+	font-size: 48px;
+}
+
+body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}

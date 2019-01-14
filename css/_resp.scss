@@ -1,0 +1,66 @@
+
+@mixin breakpoint($point) {
+	@if $point == desktop {
+    	@media (min-width: 70em) {
+			.container {
+    			max-width: 1200px;
+    		}
+    	}
+	}
+
+    @else if $point == tablet {
+    	@media (min-width: 50em) { 
+
+	    	.container {
+	    		max-width: 600px;
+	    	}
+
+	     	[class*="col-"] {
+	     		margin: 0 auto;
+				width: 100%;
+	     	}
+
+	     	opinion_img1,
+				opinion_img2 {
+					display: none;
+			}
+      }
+	}
+
+	@else if $point == mobileonly {
+    	@media (max-width: 37.5em)  { 
+	    	.container {
+	    		max-width: 400px;
+	    	}
+
+	    	.topnav 
+				a.icon {
+				    float: right;
+				    display: block;
+				    position: fixed;
+				    background-color: var(--white-color);
+				    width: 100%;
+				}
+
+				a:first-child {
+					padding-left: 45px;
+				}
+
+				.topnav.responsive {
+					position: fixed;
+				}
+
+				.topnav.responsive a {
+					display: block;
+					background-color: var(--white-color);
+				    width: 100%;
+				    padding: 15px 10px;
+				}
+
+				.topnav.responsive a:last-child {
+					border-top: 3px solid #000;
+				}
+			}
+     	}
+	}
+

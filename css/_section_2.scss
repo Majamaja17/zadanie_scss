@@ -1,0 +1,54 @@
+#second {
+	@extend .gradient_bg;
+	color: var(--white);
+
+	h1 {
+		@extend .header_size;
+	}
+
+	a {
+		display: block;
+		padding: 10px;
+		text-decoration: none;
+		color: var(--white);
+	}
+
+	img {
+		padding: 30px 10px 33%;
+		display: block;
+	}
+
+	textarea {
+		border: 2px solid var(--white);
+		background-color: var(--transparent);
+		margin: 0;
+		outline: none;
+		resize: none;
+	}
+
+	.form_top {
+		textarea {
+			width: 25%;
+			height: 50px;
+		}
+	}
+
+	.form_down {
+		textarea {
+			width: 76%;
+			height: 100px;
+		}
+	}
+
+	.contact_btn {
+		background-color: var(--white);
+		width: 76%;
+		border: none;
+		height: 50px;
+		color: var(--text-color);
+	}
+
+	::-webkit-input-placeholder { color:var(--white); }
+	::-moz-placeholder { color:var(--white); } /* firefox 19+ */
+	:-ms-input-placeholder { color:var(--white); } /* ie */
+}

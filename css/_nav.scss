@@ -1,0 +1,30 @@
+nav {
+	.topnav {
+	
+		@extend .gradient_bg;
+	    text-align: right;
+		padding: 10px;
+
+		a {
+		    display: inline-block;
+		    color: var(--white);
+		    text-align: center;
+		    padding: 20px;
+		    text-decoration: none;
+		    font-size: 16px;
+		}
+
+		a:hover {
+			color: var(--text-color);
+		}
+
+		.icon {
+		    display: none;
+		}
+
+		img {
+			float: left;
+			margin: 10px;
+		}
+	}
+}
